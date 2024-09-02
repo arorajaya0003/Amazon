@@ -152,17 +152,22 @@
     height: 900px; ;
 } **/
 .cards {
-    display: grid;
+    display: flex;
+    grid-template-columns: 3fr;
+    justify-content: space-between;
     padding: 30px;
     padding-top: 0px;
     margin-top: -150px;
     backdrop-filter: blur(7px);
+    flex-wrap: wrap;
 }
 
 .cards .card {
     display: flex;
+    column-span: span 1/span 1;
     flex-direction: column;
     padding: 16px;
+    max-width: 450px;
     gap: 5px;
     width: 30%;
     min-width: 310px;
